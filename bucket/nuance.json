@@ -1,0 +1,27 @@
+{
+    "version": "0.11.0",
+    "description": "Themeable, git-aware Nushell prompt with a live-preview theme picker",
+    "homepage": "https://github.com/sorinirimies/nuance",
+    "license": "MIT",
+    "suggest": {
+        "Nushell": "main/nu"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sorinirimies/nuance/releases/download/v0.11.0/nuance-x86_64-pc-windows-msvc.zip",
+            "hash": "4c19f2269ddc341a0ea8f3bab902620b12d23f193c23b9ae710a51451317ca32"
+        }
+    },
+    "bin": "nuance.exe",
+    "notes": "Run any nuance command once (e.g. `nuance theme`) to install the prompt into Nushell's autoload directory.",
+    "checkver": {
+        "github": "https://github.com/sorinirimies/nuance"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sorinirimies/nuance/releases/download/v$version/nuance-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
